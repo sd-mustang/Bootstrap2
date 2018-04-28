@@ -5,6 +5,22 @@
     <UserSecretsId>aspnet-Bootstrap2-85D3C7AA-1D7A-4257-8116-A9BB4D419C3E</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Styles\NewFolder1\**" />
+    <Compile Remove="Styles\NewFolder\**" />
+    <Content Remove="Styles\NewFolder1\**" />
+    <Content Remove="Styles\NewFolder\**" />
+    <EmbeddedResource Remove="Styles\NewFolder1\**" />
+    <EmbeddedResource Remove="Styles\NewFolder\**" />
+    <None Remove="Styles\NewFolder1\**" />
+    <None Remove="Styles\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\css\site.min.css" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
